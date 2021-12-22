@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+        </script>
+    </head>
+    <title>Test page</title>
+    
+    <style> <!--- the style tag starts from here-->
+        
+        h1 {text-align: center;}
+        p {text-align: center;}
+        div {text-align: center;}
+        span {text-align: center;} 
+
+        .Pop-up-window {
+        display: none;
+        position: center;
+        bottom: 0px;
+        top: 0px;
+        right: 50px;
+        left: 500px;
+        border: 10px solid orange;
+        border-width: 10px 10px;
+        }
+        
+
+        .sign-up-area {
+            align: center;
+            padding: 5px;
+            background-color: white;
+        }
+
+        .email {
+            color: black;
+            background-color: 009900;
+            margin: 50px 0 0 -80px;
+            font-size: 20px;
+        }
+
+        .psw {
+            color: black;
+            background-color: 009900;
+            margin: 50px 0 0 -49px;
+            font-size: 20px;
+        }
+
+        .psw-reset {
+            color: black;
+            background-color: 009900;
+            margin: 50px 0 0 10px;
+            font-size: 20px;
+        }
+        .first-name {
+            color: black;
+            background-color: 009900;
+            margin: 50px 0 0 -30px;
+            font-size: 20px;
+        }
+
+        .last-name {
+            color: black;
+            background-color: 009900;
+            margin: 50px 0 0 -35px;
+            font-size: 20px;
+        }
+
+        .emp-code {
+            color: black;
+            background-color: 009900;
+            margin: 50px;
+            font-size: 20px;
+        }
+        
+        .register-button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: 2cm;
+            cursor: pointer;
+            width: 30%;
+            height: 30%;
+            opacity: 0.9;
+}
+
+        .sign-up-button{
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px 20px;
+            margin: 600px 600px 10px;
+            border: 2cm;
+            cursor: pointer;
+            width: 20%;
+            height: 30%;
+            opacity: 0.9;
+            align: center;
+
+    }
+    <body {
+            text-align: center;
+    }
+    </style>
+    <body> 
+        <div class="Pop-up-window" id="myForm">
+                <!---<div class = "sign-up-close-button"></div> --->
+                <!--- <h2> Sign Up Here </h2> --->
+                <form class = "sign-up-area">
+                    <ul style="list-style: none;">
+                        <li class = "first-name">
+                            <label for="first-name"><b>First Name</b></label>  <!--- (Now the question is, What is the <b> tag here? and What does it do? Ans) The "<b>" tag is the bold tag, for bolding of text's inside it.)  <!---Lable tag starts here-->
+                            <input type="text" placeholder="Enter Email" name="first-name" required>                                                 <!---Input tag starts here-->
+                        </li>
+        
+                        <li class = "last-name">
+                            <label for="last-name"><b>Last Name </b></label>  <!--- (Now the question is, What is the <b> tag here? and What does it do? Ans) The "<b>" tag is the bold tag, for bolding of text's inside it.)  <!---Lable tag starts here-->
+                                <input type="text" placeholder="Enter Email" name="last-name" required>
+                        </li>
+        
+                        <li class = "email" >
+                                <label for="email"><b>Email</b></label>  <!--- (Now the question is, What is the <b> tag here? and What does it do? Ans) The "<b>" tag is the bold tag, for bolding of text's inside it.)  <!---Lable tag starts here-->
+                                <input type="text" placeholder="Enter Email" name="email" required>                                                 <!---Input tag starts here-->
+                        </li>
+                            
+                        <li class = "psw">
+                                <label for="psw"><b>Password</b></label> 
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+                        </li>
+                            
+                        <li class = "psw-reset">
+                                <label for="psw-repeat"><b>Repeat Password</b></label>
+                                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                        </li>
+                    
+                        <li class= "emp-code">
+                                <label for="emp-code"><b>Employee Code</b></label>  <!--- (Now the question is, What is the <b> tag here? and What does it do? Ans) The "<b>" tag is the bold tag, for bolding of text's inside it.)  <!---Lable tag starts here-->
+                                <input type="number"  placeholder="Enter unique code" name="emp-code" maxlength="5" required>                                               <!---Input tag starts here-->
+                        </li>
+                         <li>   
+                        <button type="submit" class = "register-button" onclick=""><h2> Register </h2></button>
+                         </li>
+                    </ul>
+                </form>
+        </div>
+        <button type="button" class = "sign-up-button" onclick = "openForm()"><h2>Sign Up</h2></button> <!---The button tag automatically creates a button on the constraint inside of it-->            
+    </body>
+</html>
+
